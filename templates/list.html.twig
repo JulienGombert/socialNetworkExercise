@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+
+    <div class="allprofiles">
+
+        {% for id, eachprofile in allprofiles %}
+
+            <a href="{{ path('oneprofile', {'id' : id}) }}">
+
+                <div class="lastprofile2">
+
+                    <img class="toflastprofile2" src="{{ eachprofile.img }}" alt="">
+
+                    {# <h1>{{ eachprofile.name }}</h1> #}
+
+                    <h2>
+                        {{ eachprofile.shortname }}
+                    </h2>
+
+                    <h3>
+                        {{ eachprofile.reknown }}
+                    </h3>
+
+                    {#<p>
+                        {{ eachprofile.bio }}
+                    </p>#}
+
+                </div>
+
+            </a>
+
+        {% endfor %}
+
+    </div>
+
+{% endblock %}

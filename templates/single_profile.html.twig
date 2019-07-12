@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+
+    <div class="singleprofile">
+
+        <div class="roundedimg">
+            <img src="{{ oneprofile.img }}" alt="">
+        </div>
+
+        <h1>
+            Name : {{ oneprofile.name }}
+        </h1>
+
+        <h2>
+            Shortname : {{ oneprofile.shortname }}
+        </h2>
+
+        <h3>
+            Reknown : {{ oneprofile.reknown }}
+        </h3>
+
+        <p>
+            Bio : {{ oneprofile.bio }}
+        </p>
+
+    </div>
+
+    <a href="{{ path('allprofiles') }}">Step back</a>
+
+{% endblock %}

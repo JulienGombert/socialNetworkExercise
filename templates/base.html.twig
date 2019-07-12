@@ -1,0 +1,73 @@
+{% include '_header.html.twig' %}
+
+{% include '_nav.html.twig' %}
+
+
+    {% block content %}
+
+            <div class="thelast2profiles">
+
+                {% for twoprofile in twoprofiles %}
+                    <div class="lastprofile">
+                        <img src="{{ twoprofile.img }}" alt="">
+{#                        <h1>
+                            {{ twoprofile.name }}
+                        </h1>#}
+                        <h2>
+                            {{ twoprofile.shortname }}
+                        </h2>
+                        <h3>
+                            {{ twoprofile.reknown }}
+                        </h3>
+                        {#<p>
+                            {{ twoprofile.bio }}
+                        </p>#}
+                    </div>
+                {% endfor %}
+
+            </div>
+
+            <div class="lastNews">
+                <h1>
+                    Breaking news : Lorem ipsum
+                </h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad consectetur ea eum excepturi, impedit incidunt ipsa ipsam  labore laudantium magnam magni necessitatibus officia officiis optio, quam quis tempore tenetur unde.
+                </p>
+            </div>
+
+            <div class="myNews">
+
+                <div class="homeNews">
+                    <h1>
+                        Lorem ipsum
+                    </h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad consectetur ea eum excepturi, impedit incidunt ipsa ipsam  labore laudantium magnam magni necessitatibus officia officiis optio, quam quis tempore tenetur unde.
+                    </p>
+                </div>
+
+                <div class="homeNews">
+                    <h1>
+                        Lorem ipsum
+                    </h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad consectetur ea eum excepturi, impedit incidunt ipsa ipsam  labore laudantium magnam magni necessitatibus officia officiis optio, quam quis tempore tenetur unde.
+                    </p>
+                </div>
+
+                <div class="homeNews">
+                    <h1>
+                        Lorem ipsum
+                    </h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad consectetur ea eum excepturi, impedit incidunt ipsa ipsam  labore laudantium magnam magni necessitatibus officia officiis optio, quam quis tempore tenetur unde.
+                    </p>
+                </div>
+
+            </div>
+
+    {% endblock %}
+
+
+{% include '_footer.html.twig' %}
